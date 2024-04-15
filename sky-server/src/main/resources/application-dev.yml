@@ -5,4 +5,11 @@ sky:
     port: 3306
     database: sky_take_out
     username: root
-    password: root
+    password: 123456
+  redis:
+    host: 192.168.220.128
+    port: 6379
+    database: 0
+  wechat:
+    appid: wxda2a02e1111b87d0
+    secret: 65481f47281cec400293fb187b648278
