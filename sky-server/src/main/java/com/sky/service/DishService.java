@@ -10,7 +10,7 @@ import java.util.List;
 
 
 public interface DishService {
-    void saveWithFlavor(DishVO dishVO);
+    void saveWithFlavor(DishDTO dishDTO);
 
     PageResult pageQuery(DishPageQueryDTO dishPageQueryDTO);
 

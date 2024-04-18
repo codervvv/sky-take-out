@@ -13,3 +13,7 @@ sky:
   wechat:
     appid: wxda2a02e1111b87d0
     secret: 65481f47281cec400293fb187b648278
+  shop:
+    address: 上海市松江区东华大学人民北路2999号
+  baidu:
+    ak: QMhHTD7ZLteTC1vsPsoNMti49L0hA1GV

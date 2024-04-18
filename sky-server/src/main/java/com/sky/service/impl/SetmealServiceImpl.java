@@ -73,7 +73,7 @@ public class SetmealServiceImpl implements SetmealService {
     @Transactional
     public void updateWithSetmealDish(SetmealDTO setmealDTO) {
         Setmeal setmeal = new Setmeal();
-        BeanUtils.copyProperties(setmeal,setmealDTO);
+        BeanUtils.copyProperties(setmealDTO,setmeal);
         List<SetmealDish> setmealDishes = setmealDTO.getSetmealDishes();
         Long id = setmeal.getId();
         setmealMapper.update(setmeal);
@@ -114,7 +114,7 @@ public class SetmealServiceImpl implements SetmealService {
         Setmeal setmeal = setmealMapper.getById(id);
         List<SetmealDish> setmealDishes = setmealDishMapper.getSetmealById(id);
         SetmealVO setmealVO = new SetmealVO();
-        BeanUtils.copyProperties(setmealVO,setmeal);
+        BeanUtils.copyProperties(setmeal,setmealVO);
         setmealVO.setSetmealDishes(setmealDishes);
         return setmealVO;
     }
